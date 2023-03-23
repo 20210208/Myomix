@@ -1,0 +1,125 @@
+div.logo {border-width: 5px;
+    border-width: 50px;
+    border-radius: 5px;
+    color: #7ACAEE;
+    background-color: #7ac9ee00;
+}
+
+div.logo:hover {
+    cursor: pointer;
+}
+
+div.searchbar {
+align-self: center;
+}
+
+
+
+
+button.Boton {
+border-width: .1px;
+border-color: rgba(0, 0, 0, 0);
+border-radius: 30px;
+height: 41px;
+width: 65px;
+}
+
+button:hover {
+background-color: #7ACAEE;
+border-color: rgb(0, 0, 0);
+transition: all .2s;
+}
+
+
+div.buscar {
+display: flex;
+flex-wrap: nowrap;
+justify-content: flex-end;
+height: 50px;
+width: 60px;
+}
+
+button.button {
+    width: 95px;
+    height: 30px;    
+    border-radius: 30px;
+    border-color: black;
+}
+
+img.background {
+    height: 800px;
+}
+
+div.sticker {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+div.sticker img {
+    width: 200px;
+}
+
+div.sticker .contacts {
+    width: 750px;
+}
+
+div.space {
+    height: 70px;
+    background-color: #EEEEEE;
+}
+
+div.spacefirst {
+    height: 13px;
+    background-color: #EEEEEE;
+}
+
+div.contacts-space {
+    width: 800px;
+    background-color: #EEEEEE;
+}
+
+div.contacts {
+    width: 1000px;
+    height: 718px;
+    background-color: #7ACAEE;
+}
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: black;
+}
+
+div.footer-section {
+    height: 155px;
+    width: 450px;
+    color: white;
+}
+
+div.we {
+    text-align: center;
+    justify-content: space-around;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.contacts {
+    text-align: center;
+}
+
+div.object {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+div.flex-objects {
+    height: 500px;
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

@@ -1,0 +1,146 @@
+div.logo {border-width: 5px;
+    border-width: 50px;
+    border-radius: 5px;
+    color: #7ACAEE;
+    background-color: #7ac9ee00;
+}
+
+div.searchbar {
+align-self: center;
+}
+
+
+
+
+button.Boton {
+border-width: .1px;
+border-color: rgba(0, 0, 0, 0);
+border-radius: 30px;
+height: 41px;
+width: 65px;
+}
+
+button:hover {
+background-color: #7ACAEE;
+border-color: rgb(0, 0, 0);
+transition: all .2s;
+}
+
+
+div.buscar {
+display: flex;
+flex-wrap: nowrap;
+justify-content: flex-end;
+height: 50px;
+width: 60px;
+}
+
+button.button {
+    width: 95px;
+    height: 30px;    
+    border-radius: 30px;
+    border-color: black;
+}
+
+div.filtros {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+div.contenedor {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+div.objetos {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    border-radius: 15px;
+}
+
+div.opcion-filtros {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+
+}
+
+button.opcion {
+    height: 75px;
+    width:75px ;
+    border-radius: 10px;
+    background-color: #EEEEEE;
+    border-color: rgba(0, 0, 0, 0);
+    border-width: 1px;
+    justify-content: center;
+}
+
+button.opcion:hover {
+    background-color: #7ACAEE;
+    border-color: rgba(0, 0, 0, 0.556);
+    border-width: 1px;
+    transition: all .2s;
+}
+
+button.opcion.last {
+background-color: #EEEEEE;
+opacity: 30px;
+}
+
+button.opcion.last:hover {
+    background-color: #dedddd;
+    opacity: 30px;
+    }
+
+button.agregar {
+    width: 150px;
+}
+
+div.card {
+    border-radius: 15px;
+    max-height: 500px;
+    font-size: small;
+    background-color: rgba(255, 255, 255, 0.634);
+    text-align: center;
+}
+
+div.card img {
+    max-height: 200px;
+    max-width: 150px;
+    min-height: 175px;
+    min-width: 150;
+    align-self: center;
+}
+
+div.productos {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: black;
+}
+
+div.footer-section {
+    height: 155px;
+    width: 450px;
+    color: white;
+}
+
+div.card:hover {
+    cursor: pointer;
+    transition: .5s;
+    border-color: black;
+}
+
+div.logo:hover {
+    cursor: pointer;
+}

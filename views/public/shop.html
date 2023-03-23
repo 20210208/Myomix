@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>shop</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<link rel="stylesheet" href="../../resorces/css/shop.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+	<!-- Menu de busqueda -->
+	<header>
+		<nav class="navbar is-fixed-top" style="height: 80px;">
+			<div style="width: 7px;"></div>
+
+			<!-- Logo de myomix en la esquina superior izquierda -->
+
+			<div class="logo" style="width: 125px; height: 50px;">
+				<h2 class="is-family-sans-serif has-text-weight-semibold" style="font-size: 2rem;" onclick="location.href='index.html'">Myomix</h2>
+			</div>
+
+			<!-- Buscador -->
+
+			<div style="width: 250px;"></div>
+			<div class="searchbar" style=" width: 550px; height: 50px; align-content: start;">
+				<input class="input is-rounded" type="text" placeholder="Rounded input" style="width: 550px;">
+				<div style=" color: black; width: 20px; height: 30px;"></div>
+			</div>
+			<div>
+
+				<!-- Boton de busqueda  -->
+
+				<div class="buscar-contenedor">
+					<div class="buscar">
+						<button class="Boton">
+							<div style="height: 2px;"></div>
+							<ion-icon name="search-outline" style="font-size: 20px; "></ion-icon>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="navbar-end">
+				<div class="navbar-item">
+					<div class="field is-grouped">
+						<p class="control">
+							<!-- Ajustes de usuario -->
+							<a class="button is-rounded" onclick="location.href='login.html' ">
+								<ion-icon name="person-circle-outline" style="font-size: 45px;"></ion-icon>
+							</a>
+						</p>
+						<!-- Carrito de compras -->
+						<p class="control">
+							<a class="button is-rounded" onclick="location.href='shopping_cart.html' ">
+								<ion-icon name="cart-outline" style="font-size: 45px;"></ion-icon>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			</div>
+		</nav>
+	</header>
+
+	<section>
+		<div style="height: 200px; background-color: #EEEEEE;"></div>
+
+		<!-- Filtros de busqueda -->
+
+		<div style="height: 30px; background-color: #EEEEEE;">
+			<div class="filtros">
+				<div style="width: 100px;"></div>
+				<button class="button is-rounded">Marcas</button>
+				<button class="button is-rounded">Categorias</button>
+			</div>
+		</div>
+
+		<!-- Porductos -->
+
+		<div style="height: 1000px; background-color: #EEEEEE; justify-content: center;">
+			<div class="contenedor" style="background-color: #EEEEEE; height: 800px ;">
+				<div style="width: 100px;"></div>
+				<div class="objetos"
+					style="background-color: #D8D8D8; height: 700px; width: 1300px; justify-content: center;">
+
+					<!-- Opciones de filtros -->
+
+					<div class="flex-filtros" style="height: 100px; width: 1300px;">
+						<div class="objetos" style="background-color: #D8D8D8; height: 25px;"></div>
+						<div class="opcion-filtros" style="background-color: #D8D8D8; height: 78px; width: 1300px; ">
+							<button class="button is-hovered opcion">
+								<img src="resorces/imgs/brands/samsung.png" alt="" style="height: auto; width: auto;">
+							</button>
+							<button class="button is-hovered opcion">
+								<img src="resorces/imgs/brands/lg.png" alt="">
+							</button>
+							<button class="button is-hovered opcion">
+								<ion-icon name="image-outline" style="font-size: 40px;"></ion-icon>
+							</button>
+							<button class="button is-hovered opcion">
+								<ion-icon name="image-outline" style="font-size: 40px;"></ion-icon>
+							</button>
+							<button class="button is-hovered opcion">
+								<ion-icon name="image-outline" style="font-size: 40px;"></ion-icon>
+							</button>
+							<button class="button is-hovered opcion">
+								<ion-icon name="image-outline" style="font-size: 40px;"></ion-icon>
+							</button>
+							<button class="button is-hovered opcion">
+								<ion-icon name="image-outline" style="font-size: 40px;"></ion-icon>
+							</button>
+							<button class="button is-hovered opcion">
+								<ion-icon name="image-outline" style="font-size: 40px;"></ion-icon>
+							</button>
+							<button class="button is-hovered opcion">
+								<ion-icon name="image-outline" style="font-size: 40px;"></ion-icon>
+							</button>
+							<button class="button is-hovered opcion last">
+								<ion-icon name="arrow-forward-circle-outline" style="font-size: 40px;"></ion-icon>
+							</button>
+						</div>
+						<div style="background-color: #D8D8D8; height: 110px;">
+
+						</div>
+
+						<!-- Productos -->
+
+						<div class="productos" onclick="location.href='product.html'">
+							<div class="card" style="width: 18rem;">
+								<img src="resorces/imgs/products/refrigeradoras.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Refrigeradora marca samsung</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+										Laborum
+										quae libero fugit facere enim, officia, harum perspiciatis repellendus eum
+										eveniet
+										labore quasi sunt odio minus iusto optio dignissimos ea similique!</p>
+									<button class="button agregar is-rounded">Agregar al carrito</button>
+								</div>
+							</div>
+
+							<div class="card" style="width: 18rem;">
+								<img src="resorces/imgs/error.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Refrigeradora marca samsung</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+										Laborum
+										quae libero fugit facere enim, officia, harum perspiciatis repellendus eum
+										eveniet
+										labore quasi sunt odio minus iusto optio dignissimos ea similique!</p>
+									<button class="button agregar is-rounded">Agregar al carrito</button>
+								</div>
+							</div>
+
+							<div class="card" style="width: 18rem;">
+								<img src="resorces/imgs/error.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Refrigeradora marca samsung</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+										Laborum
+										quae libero fugit facere enim, officia, harum perspiciatis repellendus eum
+										eveniet
+										labore quasi sunt odio minus iusto optio dignissimos ea similique!</p>
+									<button class="button agregar is-rounded">Agregar al carrito</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Pie de pagina -->
+	<footer>
+		<div class="container-footer">
+			<div class="row">
+				<div class="col">
+					<footer>
+						<div class="footer-section">
+							<br>
+							<h3>Links</h3>
+							<span>
+								<ul>
+									<li><a href="index.html" class="link-light"> inicio</a></li>
+									<li><a href="login.html" class="link-light">Gestionar mi perfil</a></li>
+									<li><a href="shopping_cart.html" class="link-light">Mi carrito de compras</a></li>
+								</ul>
+						</div>
+						<div class="footer-section">
+							<br>
+							<h3>Contactanos</h3>
+							<span>
+								<ul>
+									<li><a href="#" class="link-light"> atencionAlcliente@myomixbisness.com</a></li>
+									<li><a href="#" class="link-light"> Llamanos al: 7764-9087</a></li>
+
+								</ul>
+						</div>
+						<div class="footer-section">
+							<br>
+							<h3>Sobre nosotros</h3>
+							<span>
+								<ul>
+									<li><a href="about_us.html" class="link-light">Sobre nosotros</a></li>
+									<li><a href="#" class="link-light">Servicios</a></li>
+									<li><a href="#" class="link-light">¿Necesitas ayuda?</a></li>
+								</ul>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<script src="../../resorces/js/shop.js"></script>
+	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+
+</html>

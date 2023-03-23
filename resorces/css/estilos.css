@@ -1,0 +1,151 @@
+div.logo {border-width: 5px;
+    border-width: 50px;
+    border-radius: 5px;
+    color: #7ACAEE;
+    background-color: #7ac9ee00;
+}
+
+div.container-logo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right; 
+    height: 25px;
+    padding-top: 150px;
+    width: 760px;
+}
+
+.card-title{
+    color: #7ACAEE;
+    font-weight: bold;
+}
+
+.card{
+  margin-left: 50px;  
+}
+
+div.container-titulo{
+    padding-top: 150px;
+    color: black;
+    display: flex;
+    float: center;
+    padding-left: 680px;
+    font-weight: bold;
+}
+
+div.container-di{
+    display: flex;
+    float: center;
+    padding-left: 300px;
+}
+
+
+div.container-form{
+    display: flex;
+    float: center;
+    padding-top: 50px;
+    padding-left: 400px;
+    padding-right: 100px;
+    width: 1250px;
+}
+
+div.container-main {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+    height: 250px;
+    padding-top: 75px;
+    width: 860px;
+}
+
+div.recu{
+    justify-content: center;
+    display: flex;
+    float: center;
+}
+
+div.container-social{
+    padding-top: 280px;
+}
+
+div.searchbar {
+    align-self: center;
+}
+
+
+
+
+button.Boton {
+    border-width: .1px;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 30px;
+    height: 41px;
+    width: 65px;
+}
+
+button:hover {
+    background-color: #7ACAEE;
+    border-color: rgb(0, 0, 0);
+    transition: all .2s;
+}
+
+
+div.buscar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    height: 50px;
+    width: 60px;
+}
+
+nav.navbar:hover {
+    background-color: #ffffff;
+    transition: .7s;
+}
+
+
+
+div.tienda {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-items: flex-start;
+}
+
+div.redes {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-items: flex-start;
+    justify-content: space-between;
+}
+
+.red {
+    font-size: 50px;
+}
+
+button.app {
+    border-radius: 15px;
+    height: 70px;
+    width: 70px;
+    border-width: 1px;
+    border-color: rgba(128, 128, 128, 0);
+}
+
+div.red-espacio {
+    width: 100px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: black;
+}
+
+div.footer-section {
+    height: 155px;
+    width: 450px;
+    color: white;
+}
+
+div.logo:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>index</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<link rel="stylesheet" href="../../resorces/css/index.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/amatic-sc" type="text/css" />
+
+</head>
+
+<body>
+	<header>
+		<nav class="navbar is-fixed-top" style="height: 80px;">
+			<div style="width: 7px;"></div>
+
+			<!-- Logo de myomix en la esquina superior izquierda -->
+
+			<div class="logo" style="width: 125px; height: 50px;">
+				<h2 class="is-family-sans-serif has-text-weight-semibold" style="font-size: 2rem;">Myomix</h2>
+			</div>
+
+			<!-- Buscador -->
+
+			<div style="width: 250px;"></div>
+			<div class="searchbar" style=" width: 550px; height: 50px; align-content: start;">
+				<input class="input is-rounded" type="text" placeholder="Rounded input" style="width: 550px;">
+				<div style=" color: black; width: 20px; height: 30px;"></div>
+			</div>
+
+			<div>
+
+				<!-- Boton de busqueda  -->
+
+				<div class="buscar-contenedor">
+					<div class="buscar">
+						<button class="Boton">
+							<div style="height: 2px;"></div>
+							<ion-icon name="search-outline" style="font-size: 20px; "></ion-icon>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="navbar-end">
+				<div class="navbar-item">
+					<div class="field is-grouped">
+						<p class="control">
+
+							<!-- Ajustes de usuario -->
+
+							<button class="button is-rounded" onclick="location.href='login.html' ">
+								<ion-icon name="person-circle-outline" style="font-size: 45px;"></ion-icon>
+							</button>
+						</p>
+						<p class="control">
+							<button class="button is-rounded" onclick="location.href='shopping_cart.html' ">
+								<ion-icon name="cart-outline" style="font-size: 45px;"></ion-icon>
+							</button>
+						</p>
+					</div>
+				</div>
+			</div>
+			</div>
+		</nav>
+	</header>
+	<div style="height: 80px;"></div>
+
+	<!-- Direccionador a la tienda -->
+
+	<section>
+		<div class="tienda">
+			<div style="height: 35px; width: 750px; background-color: #7ACAEE;">
+				<div style="height: 5px;"></div>
+				<h5 style="align-self: center; text-align: center;"><a class="gray link-light" href="shop.html">20% de
+						descuento en todos los productos de la marca samsung</a></h5>
+			</div>
+			<div style="height: 35px; background-color: gray; width: 750px; align-self: end;">
+				<div style="height: 5px;"></div>
+				<h5 style="text-align: center;"><a class="white link-light" href="shop.html">15% de descuento al
+						realizar tu
+						primera compra</a></h5>
+			</div>
+		</div>
+
+		<!-- Carrusel de imagenes -->
+
+		<div id="carouselExampleIndicators" class="carousel slide">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+					aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+					aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+					aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="resorces/imgs/stock1.webp" class="d-block w-100" alt="..." style=" max-height: 850px;">
+				</div>
+				<div class="carousel-item">
+					<img src="resorces/imgs/error.jpg" class="d-block w-100" alt="..."
+						style=" max-height: 850px; width:min-content;">
+				</div>
+				<div class="carousel-item">
+					<img src="resorces/imgs/error.jpg" class="d-block w-100" alt="..."
+						style=" max-height: 850px; width: fit-content;">
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+		<span></span>
+		<div style="height: 80px;"></div>
+
+		<!-- Nuestras redes -->
+
+		<div class="redes" style="height: 90px; ">
+			<div class="red-espacio"></div>
+			<div class="red facebook">
+				<button class="app" onclick="location.href='https://www.facebook.com/login/'">
+					<ion-icon name="logo-facebook"></ion-icon>
+				</button>
+				<h6 style=" font-family: 'AmaticSCBold'; font-size: 22px; text-align: center;">Facebook</h6>
+			</div>
+			<div class="red instagram">
+				<button class="app" onclick="location.href='https://www.instagram.com'">
+					<ion-icon name="logo-instagram"></ion-icon>
+				</button>
+				<h6 style=" font-family: 'AmaticSCBold'; font-size: 22px; text-align: center;">Instagram</h6>
+			</div>
+			<div class="red whatsapp">
+				<button class="app" onclick="location.href='https://www.whatsapp.com'">
+					<ion-icon name="logo-whatsapp"></ion-icon>
+				</button>
+				<h6 style=" font-family: 'AmaticSCBold'; font-size: 22px; text-align: center;">Whatsapp</h6>
+			</div>
+			<div class="red-espacio"></div>
+		</div>
+		<div style="height: 50px;"></div>
+	</section>
+
+	<!-- Pie de pagina -->
+
+	<footer>
+		<div style="height: 45px;"></div>
+		<div class="footer-section">
+			<h3>Links</h3>
+			<span>
+				<h6 class="has-text-weight-light	"><a href="about_us.html" class="link-light">Sobre nosotros</a></h6>
+				<h6 class="has-text-weight-light	"><a href="login.html" class="link-light">Gestionar mi perfil</a></h6>
+				<h6 class="has-text-weight-light	"><a href="shopping_cart.html" class="link-light">Mi carrito de
+						compras</a></h6>
+		</div>
+		<div class="footer-section">
+			<h3>Contactanos</h3>
+			<span>
+				<h6 class="has-text-weight-light	">atencionAlcliente@myomixbisness.com</h6>
+				<h6 class="has-text-weight-light	">Llamanos al: 7764-9087</h6>
+		</div>
+		<div class="footer-section">
+			<h3>Mas de nosotros</h3>
+			<span>
+				<h6 class="has-text-weight-light	"><a href="" class="link-light">Sobre nosotros</a></h6>
+				<h6 class="has-text-weight-light	"><a href="" class="link-light">Servicios</a></h6>
+				<h6 class="has-text-weight-light	"><a href="" class="link-light">Necesitas ayuda?</a></h6>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<script src="../../resorces/js/index.js"></script>
+	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+
+</html>

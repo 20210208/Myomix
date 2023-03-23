@@ -1,0 +1,150 @@
+div.logo {border-width: 5px;
+    border-width: 50px;
+    border-radius: 5px;
+    color: #7ACAEE;
+    background-color: #7ac9ee00;
+}
+
+div.searchbar {
+align-self: center;
+}
+
+
+
+
+button.Boton {
+border-width: .1px;
+border-color: rgba(0, 0, 0, 0);
+border-radius: 30px;
+height: 41px;
+width: 65px;
+}
+
+button:hover {
+background-color: #7ACAEE;
+border-color: rgb(0, 0, 0);
+transition: all .2s;
+}
+
+
+div.buscar {
+display: flex;
+flex-wrap: nowrap;
+justify-content: flex-end;
+height: 50px;
+width: 60px;
+}
+
+button.button {
+    width: 95px;
+    height: 30px;    
+    border-radius: 30px;
+    border-color: black;
+}
+
+div.cart-state {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-content: end;
+}
+
+.content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+div.card  {
+    border-radius: 15px;
+    text-align: start;
+}
+
+div.card-links {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: start;
+}
+
+div.first {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: start;
+}
+
+div.card-body {
+    width: 600px;
+}
+
+img {
+    width: 150px;
+}
+
+button.button-card {
+    height: 35px;
+    width: 30;
+    border-radius: 30px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+div.manage-cant {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+div.checkout {
+    width: 310px;
+    border-radius: 15px;
+    background-color: #CDCDCD;
+    border-width: 5px;
+    justify-content: center;
+    text-align: center;
+    align-content: start;
+    display: flex;
+    flex-wrap: wrap;
+    height: 650px;
+}
+
+button.btn-info{
+    width: 200px;
+}
+
+div.info-cart {
+    background-color: #EEEEEE;
+    border-radius: 15px;
+    width: 200px;
+    height: 320px;
+    text-align: center;
+}
+
+input.input {
+    width: 200px;
+    height: 40px;
+    background-color: #EEEEEE;
+    border-radius: 15px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: black;
+}
+
+div.footer-section {
+    height: 155px;
+    width: 450px;
+    color: white;
+}
+
+button.btn-info {
+    background-color: #7ACAEE;
+}
+
+div.logo:hover {
+    cursor: pointer;
+}

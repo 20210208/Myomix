@@ -1,0 +1,161 @@
+div.logo {border-width: 5px;
+    border-width: 50px;
+    border-radius: 5px;
+    color: #7ACAEE;
+    background-color: #7ac9ee00;
+}
+
+div.searchbar {
+align-self: center;
+}
+
+
+
+
+button.Boton {
+border-width: .1px;
+border-color: rgba(0, 0, 0, 0);
+border-radius: 30px;
+height: 41px;
+width: 65px;
+}
+
+button:hover {
+background-color: #7ACAEE;
+border-color: rgb(0, 0, 0);
+transition: all .2s;
+}
+
+
+div.buscar {
+display: flex;
+flex-wrap: nowrap;
+justify-content: flex-end;
+height: 50px;
+width: 60px;
+}
+
+nav.navbar:hover {
+background-color: #ffffff;
+transition: .7s;
+}
+
+div.navegation {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    background-color: #EEEEEE;
+}
+
+div.content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    height: 500px;
+    background-color: #EEEEEE;
+}
+
+div.product {
+    width: 700px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border-width: 1px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+div.info {
+    width: 600px;
+    background-color: #7ac9ee00;
+}
+
+img {
+    text-align: center;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+div.image {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: black;
+}
+
+div.footer-section {
+    height: 155px;
+    width: 450px;
+    color: white;
+}
+
+div.stars{
+    font-size: 30px;
+}
+
+div.reviews{
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: flex-start;
+}
+
+div.actions {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: flex-start;
+    width: 900px;
+}
+
+input.cant {
+    background-color: #CDCDCD;
+    border-color: rgba(0, 0, 0, 0);
+    width: 40px; 
+    height: 30px;
+}
+
+div.control {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: flex-start;
+}
+
+div.option {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #cdcdcd7a;
+    text-align: center;
+    font-size: 40px;
+}
+
+div.options {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+button.btn-info {
+    background-color: #7ACAEE;
+    color: white;
+}
+
+button.btn-info:hover {
+    color: white;
+}
+
+div.option:hover {
+    cursor: pointer;
+    border-color: black;
+    transition: .5s;
+    border-width: 1px;
+}
+
+div.logo:hover {
+    cursor: pointer;
+}
