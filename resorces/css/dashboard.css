@@ -9,7 +9,7 @@ div.logo {
     background-color: #7ac9ee00;
 }
 
-div.container-contenedor{
+div.container-contenedor {
     position: sticky;
 }
 
@@ -31,13 +31,13 @@ div.container-main {
     width: 860px;
 }
 
-div.recu{
+div.recu {
     justify-content: center;
     display: flex;
     float: center;
 }
 
-div.container-social{
+div.container-social {
     padding-top: 280px;
 }
 

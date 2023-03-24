@@ -1,43 +1,154 @@
-div.logo {border-width: 5px;
-    border-width: 50px;
+header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 100px;
+    background: #061e46;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+header .logo {
+    text-decoration: none;
+}
+
+.navegation input {
+    margin-left: 40px;
     border-radius: 5px;
-    color: #7ACAEE;
-    background-color: #7ac9ee00;
+    border: #fff;
+    height: 35px;
 }
 
-div.searchbar {
-align-self: center;
+.logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+
 }
 
+.navegation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+
+.navegation .btn-search {
+    width: 50px;
+    height: 34px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.navegation .btn-search:hover {
+    background: #fff;
+    color: #061e46;
+}
+
+.navegation a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navegation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navegation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+
+.navegation .btnLogin-popup:hover {
+    background: #fff;
+    color: #061e46;
+
+}
+
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #daebff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    transition: .5s;
+}
 
 
 
 button.Boton {
-border-width: .1px;
-border-color: rgba(0, 0, 0, 0);
-border-radius: 30px;
-height: 41px;
-width: 65px;
+    width: 40%;
+    height: 45px;
+    background: transparent;
+    border: black;
+    border-style: groove;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+    transition: .5s;
 }
 
 button:hover {
-background-color: #7ACAEE;
-border-color: rgb(0, 0, 0);
-transition: all .2s;
+    background: none;
+    color: #061e46;
+    border: none;
+    transition: all .2s;
 }
 
 
 div.buscar {
-display: flex;
-flex-wrap: nowrap;
-justify-content: flex-end;
-height: 50px;
-width: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    height: 50px;
+    width: 60px;
 }
 
 button.button {
     width: 95px;
-    height: 30px;    
+    height: 30px;
     border-radius: 30px;
     border-color: black;
 }
@@ -55,7 +166,7 @@ div.cart-state {
     justify-content: start;
 }
 
-div.card  {
+div.card {
     border-radius: 15px;
     text-align: start;
 }
@@ -109,8 +220,18 @@ div.checkout {
     height: 650px;
 }
 
-button.btn-info{
-    width: 200px;
+button.btn-info {
+    background: none;
+    color: #061e46;
+    border: none;
+    transition: all .2s;
+}
+
+button.btn-info:hover {
+    background: #061e46;
+    color: white;
+    border: none;
+    transition: all .2s;
 }
 
 div.info-cart {

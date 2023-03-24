@@ -15,54 +15,17 @@
 <body>
 	<!-- Menu de busqueda -->
 	<header>
-		<nav class="navbar is-fixed-top" style="height: 80px;">
-			<div style="width: 7px;"></div>
+		<a href="" class="logo">Myomix</a>
+		<nav class="navegation">
+			<a href="#">Inicio</a>
+			<a href="sign_up.html">Mi cuenta</a>
+			<a href="shopping_cart.html">Carrito</a>
+			<input type="text" name="ecode_searcher_input" id="ecode_searcher_input" class="ecode_searcher_input"
+				placeholder="Buscar...">
 
-			<!-- Logo de myomix en la esquina superior izquierda -->
+			<button class="btn-search"><ion-icon name="search"></ion-icon></button>
 
-			<div class="logo" style="width: 125px; height: 50px;">
-				<h2 class="is-family-sans-serif has-text-weight-semibold" style="font-size: 2rem;" onclick="location.href='index.html'">Myomix</h2>
-			</div>
-
-			<!-- Buscador -->
-
-			<div style="width: 250px;"></div>
-			<div class="searchbar" style=" width: 550px; height: 50px; align-content: start;">
-				<input class="input is-rounded" type="text" placeholder="Rounded input" style="width: 550px;">
-				<div style=" color: black; width: 20px; height: 30px;"></div>
-			</div>
-			<div>
-
-				<!-- Boton de busqueda  -->
-
-				<div class="buscar-contenedor">
-					<div class="buscar">
-						<button class="Boton">
-							<div style="height: 2px;"></div>
-							<ion-icon name="search-outline" style="font-size: 20px; "></ion-icon>
-						</button>
-					</div>
-				</div>
-			</div>
-			<div class="navbar-end">
-				<div class="navbar-item">
-					<div class="field is-grouped">
-						<p class="control">
-							<!-- Ajustes de usuario -->
-							<a class="button is-rounded" onclick="location.href='login.html' ">
-								<ion-icon name="person-circle-outline" style="font-size: 45px;"></ion-icon>
-							</a>
-						</p>
-						<!-- Carrito de compras -->
-						<p class="control">
-							<a class="button is-rounded" onclick="location.href='shopping_cart.html' ">
-								<ion-icon name="cart-outline" style="font-size: 45px;"></ion-icon>
-							</a>
-						</p>
-					</div>
-				</div>
-			</div>
-			</div>
+			<button class="btnLogin-popup">Login</button>
 		</nav>
 	</header>
 

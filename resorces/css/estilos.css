@@ -1,29 +1,130 @@
-div.logo {border-width: 5px;
-    border-width: 50px;
-    border-radius: 5px;
-    color: #7ACAEE;
-    background-color: #7ac9ee00;
-}
-
-div.container-logo {
+header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 100px;
+    background: #061e46;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: right; 
-    height: 25px;
-    padding-top: 150px;
-    width: 760px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
 }
 
-.card-title{
+header .logo {
+    text-decoration: none;
+}
+
+.navegation input {
+    margin-left: 40px;
+    border-radius: 5px;
+    border: #fff;
+    height: 35px;
+}
+
+.logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+
+}
+
+.navegation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+
+.navegation .btn-search {
+    width: 50px;
+    height: 34px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.navegation .btn-search:hover {
+    background: #fff;
+    color: #061e46;
+}
+
+.navegation a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navegation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navegation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+
+.navegation .btnLogin-popup:hover {
+    background: #fff;
+    color: #061e46;
+
+}
+
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #6384aa;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    transition: .5s;
+}
+
+
+.card-title {
     color: #7ACAEE;
     font-weight: bold;
 }
 
-.card{
-  margin-left: 50px;  
+.card {
+    margin-left: 50px;
 }
 
-div.container-titulo{
+div.container-titulo {
     padding-top: 150px;
     color: black;
     display: flex;
@@ -32,14 +133,14 @@ div.container-titulo{
     font-weight: bold;
 }
 
-div.container-di{
+div.container-di {
     display: flex;
     float: center;
     padding-left: 300px;
 }
 
 
-div.container-form{
+div.container-form {
     display: flex;
     float: center;
     padding-top: 50px;
@@ -53,17 +154,17 @@ div.container-main {
     flex-wrap: nowrap;
     justify-content: right;
     height: 250px;
-    padding-top: 75px;
+    padding-top: 1px;
     width: 860px;
 }
 
-div.recu{
+div.recu {
     justify-content: center;
     display: flex;
     float: center;
 }
 
-div.container-social{
+div.container-social {
     padding-top: 280px;
 }
 
@@ -71,7 +172,25 @@ div.searchbar {
     align-self: center;
 }
 
+.btn-crea {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: black;
+    font-weight: 500;
+    transition: .5s;
+}
 
+.btn-crea:hover {
+    background: #061e46;
+    color: #fff;
+    border: none;
+}
 
 
 button.Boton {
@@ -100,6 +219,15 @@ div.buscar {
 nav.navbar:hover {
     background-color: #ffffff;
     transition: .7s;
+}
+
+.container-logo {
+    padding-top: 150px;
+    display: flex;
+    float: initial;
+    align-self: center;
+    align-items: center;
+    padding-left: 730px;
 }
 
 
