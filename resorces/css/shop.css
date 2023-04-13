@@ -161,6 +161,22 @@ div.filtros {
     justify-content: flex-start;
 }
 
+div.filtros a{
+    width: 8%;
+    border-style: solid;
+    border-color: #061e46;
+    background-color: transparent;
+    border-radius: 50px;
+}
+
+div.filtros a:hover{
+    background: #061e46;
+    color: #fff !important;
+    border: none;
+    transition: all .2s;
+}
+
+
 div.contenedor {
     display: flex;
     flex-wrap: nowrap;
