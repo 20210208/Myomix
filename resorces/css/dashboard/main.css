@@ -1,0 +1,29 @@
+.fondo {
+    background-color: #061e46;
+}
+
+.fondo-text {
+    color: white;
+}
+
+
+li {
+    display: flex;
+    align-items: center ;
+    
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.main {
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+
+.title {
+    color: white;
+}
