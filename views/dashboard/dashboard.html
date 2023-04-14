@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../resorces/css/dashboard.css">
+
+
+
+</head>
+
+<body>
+    <!-- Menu en la parte superior -->
+    <header>
+        <a href="" class="logo">Myomix</a>
+        <nav class="navegation">
+            <a href="dashboard.html">Inicio</a>
+            <a href="sign_up.html">Pedidos</a>
+            <a href="shopping_cart.html">Categorias</a>
+            <a href="shop.html">Proveedores</a>
+            <a href="shop.html">Usuarios</a>
+            <a href="index.html">Log out</a>
+
+        </nav>
+    </header>
+    <!-- en este apartado esta la forma de como mandar a llamar las graficas -->
+    <div id="charts" class="row d-flex justify-content-center">
+        <div class="col-4">
+            <div class="chart-container">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="chart-container2">
+                <canvas id="mychart"></canvas>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- es el codigo de como crer las graficas -->
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+            type: 'polarArea',
+            data: {
+                labels: ['Microondas', 'Lavadoras', 'Cocina'],
+                datasets: [{
+                    label: 'Numero de Ventas',
+
+                    data: [12, 19, 15],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+    <script>
+        const bar = document.getElementById('mychart');
+
+        new Chart(bar, {
+            type: 'bar',
+            data: {
+                labels: ['Microondas', 'Lavadoras', 'Cocina'],
+                datasets: [{
+                    label: 'Numero de Ventas',
+
+                    data: [12, 19, 15],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+    <!-- Pie de página -->
+    <div class="container-footer">
+        <div class="row">
+            <div class="col">
+                <footer>
+                    <div class="footer-section">
+                        <br>
+                        <h3>Links</h3>
+                        <span>
+                            <ul>
+                                <li><a href="index.html" class="link-light"> inicio</a></li>
+                                <li><a href="login.html" class="link-light">Gestionar mi perfil</a></li>
+
+                            </ul>
+                    </div>
+                    <div class="footer-section">
+                        <br>
+                        <h3>Contactanos</h3>
+                        <span>
+                            <ul>
+                                <li><a href="#" class="link-light"> atencionAlcliente@myomixbisness.com</a></li>
+                                <li><a href="#" class="link-light"> Llamanos al: 7764-9087</a></li>
+
+                            </ul>
+                    </div>
+                    <div class="footer-section">
+                        <br>
+                        <h3>Sobre nosotros</h3>
+                        <span>
+                            <ul>
+                                <li><a href="about_us.html" class="link-light">Sobre nosotros</a></li>
+                                <li><a href="#" class="link-light">Servicios</a></li>
+                                <li><a href="#" class="link-light">¿Necesitas ayuda?</a></li>
+                            </ul>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+</body>
+
+</html>

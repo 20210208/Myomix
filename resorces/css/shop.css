@@ -55,7 +55,7 @@ header .logo {
 
 .navegation .btn-search:hover {
     background: #fff;
-    color: #061e46;
+    color: #061e46 !important;
 }
 
 .navegation a::after {
@@ -95,24 +95,12 @@ header .logo {
 
 .navegation .btnLogin-popup:hover {
     background: #fff;
-    color: #061e46;
+    color: #061e46 !important;
 
 }
 
 
-.btn {
-    width: 100%;
-    height: 45px;
-    background: #6384aa;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1em;
-    color: #fff;
-    font-weight: 500;
-    transition: .5s;
-}
+
 
 
 
