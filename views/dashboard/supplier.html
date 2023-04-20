@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categorias</title>
+    <title>Proveedores</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -31,7 +31,7 @@
     </header>
     <!-- Buacador -->
     <div class="sub-nav">
-        <h2>Categorias</h2>
+        <h2>Proveedores</h2>
         <br>
         <input type="text" name="ecode_searcher_input" id="ecode_searcher_input" class="ecode_searcher_input"
             placeholder="Buscar...">
@@ -48,35 +48,48 @@
             <thead>
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Categorias</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">DUI</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Direccion</th>
                     <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <th scope="row">1</th>
-                    <td>Blanca</td>
+                    <td>Mark</td>
+                    <td>Homero</td>
+                    <td>71456882</td>
+                    <td>13564985-9</td>
+                    <td>coverstone1@cafepress.com</td>
+                    <td>55 Pennsylvania Point</td>
                     <td><button class="eliminar" data-bs-toggle="modal" data-bs-target="#eliminarmodal"><ion-icon
                                 name="remove-circle"></ion-icon></button><button class="editar" data-bs-toggle="modal"
                             data-bs-target="#editarmodal"><ion-icon name="create"></ion-icon></button></td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>
-                    <td>Gris</td>
+                    <td>Jacob</td>
+                    <td>Baudassi</td>
+                    <td>524-465-1862</td>
+                    <td>463279-1</td>
+                    <td>lmaudson2@whitehouse.gov</td>
+                    <td>28451 Artisan Circle</td>
                     <td><button class="eliminar" data-bs-toggle="modal" data-bs-target="#eliminarmodal"><ion-icon
                                 name="remove-circle"></ion-icon></button><button class="editar" data-bs-toggle="modal"
                             data-bs-target="#editarmodal"><ion-icon name="create"></ion-icon></button></td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
-                    <td>Marron</td>
-                    <td><button class="eliminar" data-bs-toggle="modal" data-bs-target="#eliminarmodal"><ion-icon
-                                name="remove-circle"></ion-icon></button><button class="editar" data-bs-toggle="modal"
-                            data-bs-target="#editarmodal"><ion-icon name="create"></ion-icon></button></td>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td>PAE</td>
+                    <td>Joel</td>
+                    <td>Odyssey</td>
+                    <td>814-734-8823</td>
+                    <td>341649-5</td>
+                    <td>rospellissey3@opera.com</td>
+                    <td>4194 Southridge Junction</td>
                     <td><button class="eliminar" data-bs-toggle="modal" data-bs-target="#eliminarmodal"><ion-icon
                                 name="remove-circle"></ion-icon></button><button class="editar" data-bs-toggle="modal"
                             data-bs-target="#editarmodal"><ion-icon name="create"></ion-icon></button></td>
@@ -89,14 +102,49 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="agregarmodalLabel">Agregar Categoria</h5>
+                    <h5 class="modal-title" id="agregarmodalLabel">Agregar proveedor</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form class="row g-3 needs-validation" validate>
-                        <div class="col-md-6">
-                            <label for="validationTooltip01" class="form-label">Categoria</label>
+                        <div class="col-md-4">
+                            <label for="validationTooltip01" class="form-label">Nombre</label>
                             <input type="text" class="form-control" id="validationTooltip01" required>
+                            <div class="invalid-feedback">
+                                !
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationTooltip02" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="validationTooltip02" required>
+                            <div class="invalid-feedback">
+                                !
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationTooltip03" class="form-label">Telefono</label>
+                            <input type="tel" class="form-control" id="validationTooltip03" required>
+                            <div class="invalid-feedback">
+                                !
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationTooltip04" class="form-label">DUI</label>
+                            <input type="text" class="form-control" id="validationTooltip04" required>
+                            <div class="invalid-feedback">
+                                !
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationTooltip05" class="form-label">Correo</label>
+                            <input type="email" class="form-control" id="validationTooltip05" required>
+                            <div class="invalid-feedback">
+                                !
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationTooltip06" class="form-label">Direccion</label>
+                            <input type="text" class="form-control" id="validationTooltip06" required>
                             <div class="invalid-feedback">
                                 !
                             </div>
@@ -134,14 +182,49 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="editarmodalLabel">Editar categoria</h5>
+                    <h5 class="modal-title" id="editarmodalLabel">Editar proveedor</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form class="row g-3 needs-validation" validate>
-                        <div class="col-md-6">
-                            <label for="validationTooltip01" class="form-label">Categoria</label>
+                        <div class="col-md-4">
+                            <label for="validationTooltip01" class="form-label">Nombre</label>
                             <input type="text" class="form-control" id="validationTooltip01" required>
+                            <div class="invalid-feedback">
+                                !
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationTooltip02" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="validationTooltip02" required>
+                            <div class="invalid-feedback">
+                                !
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationTooltip03" class="form-label">Telefono</label>
+                            <input type="tel" class="form-control" id="validationTooltip03" required>
+                            <div class="invalid-feedback">
+                                !
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationTooltip04" class="form-label">DUI</label>
+                            <input type="text" class="form-control" id="validationTooltip04" required>
+                            <div class="invalid-feedback">
+                                !
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationTooltip05" class="form-label">Correo</label>
+                            <input type="email" class="form-control" id="validationTooltip05" required>
+                            <div class="invalid-feedback">
+                                !
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationTooltip06" class="form-label">Direccion</label>
+                            <input type="text" class="form-control" id="validationTooltip06" required>
                             <div class="invalid-feedback">
                                 !
                             </div>
@@ -163,11 +246,11 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="eliminarModalLabel">Eliminar categoria</h5>
+                    <h5 class="modal-title" id="eliminarModalLabel">Eliminar proveedor</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h2>¿Eliminar esta categoria?</h2>
+                    <h2>¿Eliminar proveedor?</h2>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
