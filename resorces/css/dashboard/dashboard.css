@@ -1,0 +1,385 @@
+
+.navegation input {
+    margin-left: 40px;
+    border-radius: 5px;
+    border: #fff;
+    height: 35px;
+}
+
+
+.navegation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+
+.btn-search {
+    width: 50px;
+    height: 34px;
+    background: transparent;
+    border: 2px solid #061e46;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #061e46;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn-search:hover {
+    background: #061e46;
+    color: #fff !important;
+}
+
+.navegation a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navegation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navegation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+
+.navegation .btnLogin-popup:hover {
+    background: #fff;
+    color: #061e46 !important;
+
+}
+
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: groove;
+    border-color: #061e46;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #061e46;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn-elm{
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: groove;
+    border-color: rgb(254, 73, 73);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: rgb(254, 73, 73);
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn-elm:hover{
+    background: rgb(254, 73, 73);
+    color: #fff;
+}
+
+.btn:hover{
+    background: #061e46;
+    color: #fff;
+}
+
+
+
+button.Boton {
+    width: 40%;
+    height: 45px;
+    background: transparent;
+    border: black;
+    border-style: groove;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+    transition: .5s;
+}
+
+button:hover {
+    background: #061e46;
+    color: #fff !important;
+    border: none;
+    transition: all .2s;
+}
+
+
+
+div.buscar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    height: 50px;
+    width: 60px;
+}
+
+div.container-main {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+    height: 250px;
+    padding-top: 175px;
+    width: 860px;
+}
+
+div.recu {
+    justify-content: center;
+    display: flex;
+    float: center;
+}
+
+div.recu a{
+    color: #061e46;
+    text-decoration: none;
+}
+
+div.recu a:hover{
+    text-decoration: underline;
+}
+
+div.container-social {
+    padding-top: 280px;
+}
+
+div.searchbar {
+    align-self: center;
+}
+
+
+
+
+button.Boton {
+    border-width: .1px;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 30px;
+    height: 41px;
+    width: 65px;
+}
+
+button:hover {
+    background-color: #7ACAEE;
+    border-color: rgb(0, 0, 0);
+    transition: all .2s;
+}
+
+
+div.buscar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    height: 50px;
+    width: 60px;
+}
+
+
+
+
+
+div.tienda {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-items: flex-start;
+}
+
+div.redes {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-items: flex-start;
+    justify-content: space-between;
+}
+
+.red {
+    font-size: 50px;
+}
+
+button.app {
+    border-radius: 15px;
+    height: 70px;
+    width: 70px;
+    border-width: 1px;
+    border-color: rgba(128, 128, 128, 0);
+}
+
+div.red-espacio {
+    width: 100px;
+}
+
+.container-footer{
+    margin-top: 25%;
+}
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: black;
+}
+
+div.footer-section {
+    height: 155px;
+    width: 450px;
+    color: white;
+}
+
+.chart-container{
+    height: 40vh;
+    width: 80vh;
+}
+
+.chart-container2{
+    height: 40vh;
+    width: 60vh;
+}
+
+ol, ul {
+    padding-left: 0 !important;
+}
+
+#tabla{
+    border: solid 1px;
+    border-radius: 5px;
+    background-color: #788199;
+}
+
+img:hover {
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+#charts{
+    margin-left:15px; 
+    margin-top: 280px;
+}
+@media (max-width: 1300px) {
+    #charts{
+        display: flex;
+        flex-direction: column !important;
+    }
+}
+
+.main-tabla{
+    margin-top: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.eliminar{
+    color: rgb(233, 137, 137);
+    background-color: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: .5s;
+}
+
+.eliminar:hover{
+    background-color: rgb(233, 137, 137);
+    color: #cfe2ff;
+}
+
+.sub-nav{
+    margin-top: 150px;
+    margin-left: 60px;
+}
+
+.editar{
+    color: rgb(250, 231, 91);
+    background-color: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: .5s;
+}
+
+.editar:hover{
+    background-color: rgb(250, 231, 91);
+    color: #cfe2ff;
+}
+
+.agregar{
+    color: rgb(76, 233, 92);
+    background-color: transparent;
+    border: 2px solid rgb(76, 233, 92);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    float: inline-end;
+    margin-right: 230px;
+    transition: .5s;
+    width: 65px;
+    height: 35px;
+}
+
+.agregar:hover{
+    background-color: rgb(76, 233, 92);
+    color: #cfe2ff;
+}
+
+.reporte{
+    color: #061e46;
+    background-color: transparent;
+    border: 2px solid #061e46;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    float: inline-end;
+    margin-right: 60px;
+    transition: .5s;
+    width: 65px;
+    height: 35px;
+}
+
+.reporte:hover{
+    background-color: #061e46;
+    color: #cfe2ff;
+}
+
+.fondo {
+    background-color: #061e46;
+}
+
+.fondo-text {
+    color: white;
+}
