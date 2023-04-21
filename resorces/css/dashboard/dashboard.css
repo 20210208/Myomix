@@ -1,4 +1,21 @@
 
+header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 100px;
+    background: #061e46;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+header .logo {
+    text-decoration: none;
+}
+
 .navegation input {
     margin-left: 40px;
     border-radius: 5px;
@@ -6,6 +23,12 @@
     height: 35px;
 }
 
+.logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+
+}
 
 .navegation a {
     position: relative;
@@ -15,6 +38,9 @@
     font-weight: 500;
     margin-left: 40px;
 
+}
+.navegation ul a{
+    color: #061e46;
 }
 
 .btn-search {
@@ -120,6 +146,7 @@
 
 
 
+
 button.Boton {
     width: 40%;
     height: 45px;
@@ -209,7 +236,10 @@ div.buscar {
     width: 60px;
 }
 
-
+nav.navbar:hover {
+    background-color: #ffffff;
+    transition: .7s;
+}
 
 
 
@@ -270,7 +300,7 @@ div.footer-section {
 }
 
 ol, ul {
-    padding-left: 0 !important;
+    padding-left: none !important;
 }
 
 #tabla{
@@ -376,10 +406,10 @@ img:hover {
     color: #cfe2ff;
 }
 
-.fondo {
-    background-color: #061e46;
+nav li{
+    display: flex;
+    float: inline-start;
+    color: #061e46 !important; 
+    background-color: transparent;
 }
 
-.fondo-text {
-    color: white;
-}
