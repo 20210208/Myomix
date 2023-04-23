@@ -27,3 +27,18 @@ a {
 .title {
     color: white;
 }
+
+
+.boton {
+    width: 100%;
+    height: 45px;
+    background: #061e46;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    transition: .5s;
+}

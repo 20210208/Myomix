@@ -170,3 +170,17 @@ a.gray {
 a.white {
     color: #7ACAEE;
 } */
+
+.boton {
+    width: 100%;
+    height: 45px;
+    background: #6384aa;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    transition: .5s;
+}
