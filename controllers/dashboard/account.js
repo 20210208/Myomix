@@ -103,32 +103,20 @@ document.addEventListener('DOMContentLoaded', async () => {
         </nav>
             `;
             FOOTER.innerHTML = `
-                <div class="container">
-                    <div class="row">
-                        <div class="col s12 m6">
-                            <h6 class="white-text">Dashboard</h6>
-                            <a class="white-text" href="mailto:dacasoft@outlook.com">
-                                <i class="material-icons left">email</i>Ayuda
-                            </a>
-                        </div>
-                        <div class="col s12 m6">
-                            <h6 class="white-text">Enlaces</h6>
-                            <a class="white-text" href="../public/" target="_blank">
-                                <i class="material-icons left">store</i>Sitio público
-                            </a>
-                        </div>
-                    </div>
+            <div class="container p-4 pb-0 sticky-bottom">
+            <section class="mb-4">
+                <!-- sitio publico -->
+                <div class="d-flex flex-row ">
+                    <a class="btn btn-outline-light btn-floating m-1" href="../public/index.html"
+                        role="button"><ion-icon name="home-outline"></ion-icon></a>
+                    <p class="text-centers">Sitio Publico</p>
                 </div>
-                <div class="footer-copyright">
-                    <div class="container">
-                        <span>© 2018-2023 Copyright CoffeeShop. Todos los derechos reservados.</span>
-                        <span class="right">Diseñado con
-                            <a href="http://materializecss.com/" target="_blank">
-                                <img src="../../resources/img/materialize.png" height="20" style="vertical-align:middle" alt="Materialize">
-                            </a>
-                        </span>
-                    </div>
-                </div>
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            Myomix
+        </div>
+
             `;
         } else {
             sweetAlert(3, JSON.exception, false, 'index.html');
@@ -137,30 +125,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Se comprueba si la página web es la principal, de lo contrario se direcciona a iniciar sesión.
         if (location.pathname == '/myomix/views/dashboard/index.html') {
             HEADER.innerHTML = `
-                <div class="navbar-fixed">
-                    <nav>
-                        <div class="nav-wrapper center-align">
-                            <a href="index.html" class="brand-logo"><i class="material-icons">dashboard</i></a>
-                        </div>
-                    </nav>
-                </div>
+            <a href="../public/index.html" class="logo">Myomix</a>
             `;
             FOOTER.innerHTML = `
-                <div class="container">
-                    <div class="row">
-                        <b>Dashboard de CoffeeShop</b>
-                    </div>
-                </div>
-                <div class="footer-copyright">
-                    <div class="container">
-                        <span>© 2018-2023 Copyright CoffeeShop. Todos los derechos reservados.</span>
-                        <span class="right">Diseñado con
-                            <a href="http://materializecss.com/" target="_blank">
-                                <img src="../../resources/img/materialize.png" height="20" style="vertical-align:middle" alt="Materialize">
-                            </a>
-                        </span>
-                    </div>
-                </div>
             `;
         } else {
             location.href = 'index.html';

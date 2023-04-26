@@ -5,50 +5,175 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Usercart</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../resorces/css/dashboard/dashboard.css">
+    <link rel="stylesheet" href="../../resorces/css/dashboard/esential.css" />
+    <link rel="stylesheet" href="../../resorces/css/dashboard/cruds.css">
 </head>
 
 <body>
-    <header>
-        <a href="" class="logo">Myomix</a>
-        <nav class="navegation">
-            <a href="dashboard.html">Inicio</a>
-            <a href="supplier.html">Proveedores</a>
-            <a href="shopping_cart.html">Categorias</a>
-            <a class=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                aria-expanded="false">Productos</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item fondo-text" href="products.html"><ion-icon
-                            name="pricetags-outline"></ion-icon>Productos</a></li>
-                <li><a class="dropdown-item fondo-text" href="brands.html"><ion-icon
-                            name="library-outline"></ion-icon>Marcas</a></li>
-                <li><a class="dropdown-item fondo-text" href="category.html"><ion-icon
-                            name="bookmark-outline"></ion-icon>Categorias</a></li>
-                <li><a class="dropdown-item fondo-text" href="subcategories.html"><ion-icon
-                            name="bookmarks-outline"></ion-icon>Subcategorias</a></li>
-                <li><a class="dropdown-item fondo-text" href="images.html"><ion-icon
-                            name="images-outline"></ion-icon>Imagenes de productos</a></li>
-            </ul>
-            <a class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                aria-expanded="false">Clientes</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item fondo-text" href="clients.html"><ion-icon
-                            name="person-outline"></ion-icon>Clientes</a></li>
-                <li><a class="dropdown-item fondo-text" href="address.html"><ion-icon
-                            name="compass-outline"></ion-icon>Direcciones</a></li>
-                <li><a class="dropdown-item fondo-text" href="usersratings.html"><ion-icon
-                            name="star-half-outline"></ion-icon>Valoraciones</a></li>
-            </ul>
-            <a href="shop.html">Usuarios</a>
-            <a href="index.html">Log out</a>
+    <!-- Menu en la parte superior -->
+    <header></header>
+    <!-- Buacador -->
+    <main class="main">
+        <div class="sub-nav">
+            <h2>Compras</h2>
+            <br>
+            <input type="text" name="ecode_searcher_input" id="ecode_searcher_input" class="ecode_searcher_input"
+                placeholder="Buscar...">
 
-        </nav>
-    </header>
+            <button class="btn-search"><ion-icon name="search"></ion-icon></button>
+            <!-- Botones de agregar y el de reportes -->
+            <button class="agregar" data-bs-toggle="modal" data-bs-target="#agregarmodal"><ion-icon
+                    name="add-circle"></ion-icon></button>
+            <button class="reporte"><ion-icon name="list-circle"></ion-icon></button>
+        </div>
+        <!-- Tabla -->
+        <div class="main-tabla" id="main-tabla">
+            <table class="table table-primary table-striped table-responsive">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Valor exento de IVA</th>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Factura</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>2</td>
+                        <td>$100.00</td>
+                        <td>Microondas</td>
+                        <td>001</td>
+                        <td><button class="eliminar" data-bs-toggle="modal" data-bs-target="#eliminarmodal"><ion-icon
+                                    name="remove-circle"></ion-icon></button><button class="editar"
+                                data-bs-toggle="modal" data-bs-target="#agregarmodal"><ion-icon
+                                    name="create"></ion-icon></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>7</td>
+                        <td>$500.00</td>
+                        <td>Ventiladores</td>
+                        <td>010</td>
+                        <td><button class="eliminar" data-bs-toggle="modal" data-bs-target="#eliminarmodal"><ion-icon
+                                    name="remove-circle"></ion-icon></button><button class="editar"
+                                data-bs-toggle="modal" data-bs-target="#agregarmodal"><ion-icon
+                                    name="create"></ion-icon></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>1</td>
+                        <td>$400.00</td>
+                        <td>Refrigeradora</td>
+                        <td>020</td>
+                        <td><button class="eliminar" data-bs-toggle="modal" data-bs-target="#eliminarmodal"><ion-icon
+                                    name="remove-circle"></ion-icon></button><button class="editar"
+                                data-bs-toggle="modal" data-bs-target="#agregarmodal"><ion-icon
+                                    name="create"></ion-icon></button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Modal de agregar -->
+        <div class="modal fade" id="agregarmodal" tabindex="-1" aria-labelledby="agregarmodalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="agregarmodalLabel">Gestionar compras</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3 needs-validation" validate>
+                            <div class="col-md-4">
+                                <label for="Nombre" class="form-label">Cantidad</label>
+                                <input type="text" class="form-control" name="Nombre" id="Nombre" required>
+                                <div class="invalid-feedback">
+                                    !
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="validationTooltip03" class="form-label">Precio-Suma</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">$</span>
+                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"
+                                        id="validationTooltip03" required>
+                                </div>
+                                <div class="invalid-feedback">
+                                    !
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="es_us" class="form-label">Producto</label>
+                                <select class="form-select" id="es_u" name="es_us" required>
+                                    <option selected disabled value="">Disponibles</option>
+                                    <option>Lavadora</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    !
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="es_us" class="form-label">Factura</label>
+                                <select class="form-select" id="es_u" name="es_us" required>
+                                    <option selected disabled value="">Numero</option>
+                                    <option>001</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    !
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="button" id="liveToastBtn" type="submit">Guardar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="button btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Modal eliminar -->
+        <div class="modal fade" id="eliminarmodal" tabindex="-1" aria-labelledby="eliminarModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="eliminarModalLabel">Administrar compras</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h2>¿Deshacer esta compra?</h2>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="button btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn-elm">Continuar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-end text-white"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="../../resorces/js/sweetalert.min.js"></script>
+    <script type="text/javascript" src="../../controllers/components.js"></script>
+    <script type="text/javascript" src="../../controllers/dashboard/account.js"></script>
+    <script type="text/javascript" src="../../controllers/dashboard/usuarios.js"></script>
 </body>
 
 </html>

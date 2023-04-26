@@ -43,7 +43,7 @@ class UsuarioQueries
 
     public function readProfile()
     {
-        $sql = 'SELECT id_usuario, nombre_usuario,foto_perfil, correo
+        $sql = 'SELECT id_usuario, nombre_usuario, correo
                 FROM usuarios
                 WHERE id_usuario = ?';
         $params = array($_SESSION['id_usuario']);
@@ -82,7 +82,7 @@ class UsuarioQueries
 
     public function readAll()
     {
-        $sql = 'SELECT id_usuario, nombre_usuario, foto_perfil, estado_usuario, correo
+        $sql = 'SELECT id_usuario, nombre_usuario, estado_usuario, correo
                 FROM usuarios';
         return Database::getRows($sql);
     }
